@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::after {
+    $blur: 40px;
+    content: '';
+    position: absolute;
+    top: -$blur;
+    bottom: -$blur;
+    left: -$blur;
+    right: -$blur;
+    background: url('./assets/Loading-Screen-Ascent.png');
+    filter: brightness(35%) blur(calc($blur / 2));
+    z-index: -1;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

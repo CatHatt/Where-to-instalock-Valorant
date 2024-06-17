@@ -1,0 +1,24 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 150px);
+    gap: 8px;
+}
+
+.agent {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #ffffff80;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.13);
+    cursor: pointer;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.locked {
+    filter: brightness(50%);
+}
