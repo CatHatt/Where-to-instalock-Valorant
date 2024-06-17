@@ -18,10 +18,10 @@ body::after {
     $blur: 40px;
     content: '';
     position: absolute;
-    top: -$blur;
-    bottom: -$blur;
-    left: -$blur;
-    right: -$blur;
+    top: -$blur * 2;
+    bottom: -$blur * 2;
+    left: -$blur * 2;
+    right: -$blur * 2;
     background: url('./assets/Loading-Screen-Ascent.png');
     filter: brightness(35%) blur(calc($blur / 2));
     z-index: -1;
